@@ -1,11 +1,9 @@
 <script>
-	import { fly, fade } from 'svelte/transition'
 	import Container from '$lib/Container.svelte'
 	import PageHeading from '$lib/PageHeading.svelte'
 	import Titles from '$lib/Titles.svelte'
 	import TitleDetails from '$lib/TitleDetails.svelte'
 	import PageFooter from '$lib/PageFooter.svelte'
-	import SkillsGrid from '$lib/SkillsGrid.svelte'
 
 	const titles = [
 		{
