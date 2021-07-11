@@ -37,7 +37,7 @@ const year = new Date().getFullYear()
 
 <span class="wrapper" out:fade="{{duration: 300}}" in:fade="{{duration: 300, delay: 1000}}">
 	<footer>
-		<p>Designed by Brian Casey | © {year}</p>
+		<p>Designed and Developed by Brian Casey | © {year}</p>
 		<!-- out:fly="{{y: 20, duration: 300}}" in:fade="{{duration: 300}}" -->
 		<!-- out:fly="{{y: 20, duration: 300}}" in:fly="{{y: 20, duration: 400, delay: 400}}" -->
 	</footer>

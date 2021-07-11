@@ -18,5 +18,8 @@
 		"svelte": "^3.34.0",
 		"mdsvex": "^0.9.7"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"snarkdown": "^2.0.0"
+	}
 }

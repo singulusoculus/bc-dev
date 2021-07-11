@@ -16,6 +16,12 @@
             type: 'webdev'
         },
         {
+            name: 'SvelteKit',
+            abrv: 'Sk',
+            exp: 65,
+            type: 'webdev'
+        },
+        {
             name: 'JavaScript',
             abrv: 'Js',
             exp: 95,
@@ -128,6 +134,24 @@
             abrv: 'Py',
             exp: 20,
             type: 'webdev'
+        },
+        {
+            name: 'Oracle',
+            abrv: 'Or',
+            exp: 50,
+            type: 'ms'
+        },
+        {
+            name: 'IBM Cognos',
+            abrv: 'Co',
+            exp: 50,
+            type: 'ms'
+        },
+        {
+            name: 'Snowflake',
+            abrv: 'Sf',
+            exp: 10,
+            type: 'ms'
         },
     ]
 

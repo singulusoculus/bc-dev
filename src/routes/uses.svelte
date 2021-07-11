@@ -28,11 +28,10 @@
 
 	<PageContent content={gear} >
 		<ul>
-			<li>Work Computer: HP Elitebook G6</li>
-			<li>Home Computer: 2015 13" MacBook Pro</li>
+			<li>Computer: 2018 13" MacBook Pro</li>
 			<li>Phone: Apple iPhone 12</li>
-			<li>Headphones: Apple Airpods</li>
-			<li>Notes App: Notion</li>
+			<li>Headphones: Apple Airpods Pro</li>
+			<li>Notes App: Notion & Obsidian</li>
 			<li>Keyboard: Keychron K1</li>
 			<li>Laptop Stand: Roost 2.0</li>
 			<li>Microphone: Audiotechnica ATR2100</li>
