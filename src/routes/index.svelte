@@ -1,18 +1,13 @@
 <script context="module">
-	import { getMarkdownContents } from '$lib/getMarkdownContents'
+	import { getFileContents } from '$lib/getMarkdownContents'
 
-	export const load = async () => {
-		const biMd = await getMarkdownContents('bi')
-		const wdMd = await getMarkdownContents('webdev')
-		const wpMd = await getMarkdownContents('wp')
-		const learnerMd = await getMarkdownContents('learner')
-		
+	export async function load( { page, fetch }) {
+		const fileNames = ['bi', 'webdev', 'wp', 'learner']
+		const md = await getFileContents(fileNames, fetch, page.host)
+
 		return {
 			props: {
-				biMd,
-				wdMd,
-				wpMd,
-				learnerMd
+				md
 			}
 		}
 	}
@@ -25,36 +20,33 @@
 	import TitleDetails from '$lib/TitleDetails.svelte'
 	import PageFooter from '$lib/PageFooter.svelte'
 
-	export let biMd
-	export let wdMd
-	export let wpMd
-	export let learnerMd
+	export let md
 
 	const titles = [
 		{
 			title: 'Web Developer',
-			desc: wdMd,
+			desc: md.webdev,
 			delay: 200,
 			years: '2015-Present',
 			type: 'webdev'
 		},
 		{
 			title: 'BI Analyst/SQL Developer',
-			desc: biMd,
+			desc: md.bi,
 			delay: 400,
 			years: '2011-Present',
 			type: 'ms'
 		},
 		{
 			title: 'WordPress Expert',
-			desc: wpMd,
+			desc: md.wp,
 			delay: 600,
 			years: '2005-Present',
 			type: 'cms'
 		},
 		{
 			title: 'Avid Learner',
-			desc: learnerMd,
+			desc: md.learner,
 			delay: 800,
 			years: 'Always',
 			type: 'none'
