@@ -1,5 +1,5 @@
 const config = {
-  "extensions": [".svelte.md", ".md", ".svx"],
+  "extensions": [".md", ".svelte.md", ".svx"],
 
   "smartypants": {
     "dashes": "oldschool"

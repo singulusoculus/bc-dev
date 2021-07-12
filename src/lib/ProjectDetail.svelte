@@ -130,7 +130,8 @@
 				</div>
 				<hr>
                 <div class="content-text">
-                    {@html project.content}
+                    <!-- {@html project.content} -->
+					<svelte:component this={project.content}></svelte:component>
                 </div>
             </div>
         <div class="footer-wrapper">

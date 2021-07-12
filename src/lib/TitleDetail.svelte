@@ -94,7 +94,8 @@ if (!firstMount) {
 		</div>
         <span class="fake-border"></span>
             <div class="details-content">
-            	{@html title.desc}
+            	<!-- {@html title.desc} -->
+				<svelte:component this={title.desc}></svelte:component>
 				<SkillsGrid titleType={title.type} />
             </div>
             <div class="details-title-wrapper">

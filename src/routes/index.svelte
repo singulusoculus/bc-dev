@@ -1,18 +1,3 @@
-<script context="module">
-	import { getFileContents } from '$lib/getMarkdownContents'
-
-	export async function load( { page, fetch }) {
-		const fileNames = ['bi', 'webdev', 'wp', 'learner']
-		const md = await getFileContents(fileNames, fetch, page.host)
-
-		return {
-			props: {
-				md
-			}
-		}
-	}
-</script>
-
 <script>
 	import Container from '$lib/Container.svelte'
 	import PageHeading from '$lib/PageHeading.svelte'
@@ -20,33 +5,36 @@
 	import TitleDetails from '$lib/TitleDetails.svelte'
 	import PageFooter from '$lib/PageFooter.svelte'
 
-	export let md
+	import BusinessIntelligence from '$lib/content/bi.md'
+	import WebDev from '$lib/content/webdev.md'
+	import WordPress from '$lib/content/wp.md'
+	import Learner from '$lib/content/learner.md'
 
 	const titles = [
 		{
 			title: 'Web Developer',
-			desc: md.webdev,
+			desc: WebDev,
 			delay: 200,
 			years: '2015-Present',
 			type: 'webdev'
 		},
 		{
 			title: 'BI Analyst/SQL Developer',
-			desc: md.bi,
+			desc: BusinessIntelligence,
 			delay: 400,
 			years: '2011-Present',
 			type: 'ms'
 		},
 		{
 			title: 'WordPress Expert',
-			desc: md.wp,
+			desc: WordPress,
 			delay: 600,
 			years: '2005-Present',
 			type: 'cms'
 		},
 		{
 			title: 'Avid Learner',
-			desc: md.learner,
+			desc: Learner,
 			delay: 800,
 			years: 'Always',
 			type: 'none'
