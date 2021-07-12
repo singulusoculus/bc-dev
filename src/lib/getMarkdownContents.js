@@ -11,10 +11,10 @@ export const getMarkdownContents = async (fileName, fetch) => {
 }
 
 
-export const getFileContents = async (fileNames, skFetch, host) => {
+export const getFileContents = async (fileNames, skFetch) => {
     let fileContents = {}
     for (let i = 0; i < fileNames.length; i++) {
-        const url = `http://${host}/static/content/${fileNames[i]}.md`
+        const url = `/content/${fileNames[i]}.md`
         const res = await skFetch(url)
         const text = await res.text()
         const md = await snarkdown(text)
