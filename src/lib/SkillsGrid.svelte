@@ -6,151 +6,151 @@
         {
             name: 'Svelte.js',
             abrv: 'Sv',
-            exp: 80,
+            exp: '01',
             type: 'webdev'
         },
         {
             name: 'Sapper',
             abrv: 'Sr',
-            exp: 65,
+            exp: '02',
             type: 'webdev'
         },
         {
             name: 'SvelteKit',
             abrv: 'Sk',
-            exp: 65,
+            exp: '03',
             type: 'webdev'
         },
         {
             name: 'JavaScript',
             abrv: 'Js',
-            exp: 95,
+            exp: '04',
             type: 'webdev'
         },
         {
             name: 'CSS',
             abrv: 'Cs',
-            exp: 80,
+            exp: '05',
             type: 'webdev'
         },
         {
             name: 'HTML',
             abrv: 'Ht',
-            exp: 95,
+            exp: '06',
             type: 'webdev'
         },
         {
             name: 'MaterializeCSS',
             abrv: 'Ma',
-            exp: 80,
+            exp: '07',
             type: 'webdev'
         },
         {
             name: 'PHP',
             abrv: 'Ph',
-            exp: 65,
+            exp: '08',
             type: 'webdev'
         },
         {
             name: 'WordPress',
             abrv: 'Wp',
-            exp: 85,
+            exp: '09',
             type: 'cms'
         },
         {
             name: 'SASS',
             abrv: 'Sa',
-            exp: 50,
+            exp: '10',
             type: 'webdev'
         },
         {
             name: 'Git',
             abrv: 'Gt',
-            exp: 80,
+            exp: '11',
             type: 'dev'
         },
         {
             name: 'SQL Server',
             abrv: 'Sq',
-            exp: 100,
+            exp: '12',
             type: 'ms'
         },
         {
             name: 'mySQL',
             abrv: 'Mq',
-            exp: 80,
+            exp: '13',
             type: 'webdev'
         },
         {
             name: 'Dynamics SL',
             abrv: 'Dy',
-            exp: 95,
+            exp: '14',
             type: 'ms'
         },
         {
             name: 'SharePoint',
             abrv: 'Sp',
-            exp: 80,
+            exp: '15',
             type: 'ms'
         },
         {
             name: 'SSRS',
             abrv: 'Sr',
-            exp: 100,
+            exp: '16',
             type: 'ms'
         },
         {
             name: 'Solver BI360',
             abrv: 'Bi',
-            exp: 80,
+            exp: '17',
             type: 'ms'
         },
         {
             name: 'jQuery',
             abrv: 'Jq',
-            exp: 75,
+            exp: '18',
             type: 'webdev'
         },
         {
             name: 'Node.js',
             abrv: 'No',
-            exp: 55,
+            exp: '19',
             type: 'webdev'
         },
         {
             name: 'Vue.js',
             abrv: 'Vu',
-            exp: 20,
+            exp: '20',
             type: 'webdev'
         },
         {
             name: 'React.js',
             abrv: 'Re',
-            exp: 25,
+            exp: '21',
             type: 'webdev'
         },
         {
             name: 'Python',
             abrv: 'Py',
-            exp: 20,
+            exp: '22',
             type: 'webdev'
         },
         {
             name: 'Oracle',
             abrv: 'Or',
-            exp: 50,
+            exp: '23',
             type: 'ms'
         },
         {
             name: 'IBM Cognos',
             abrv: 'Co',
-            exp: 50,
+            exp: '24',
             type: 'ms'
         },
         {
             name: 'Snowflake',
             abrv: 'Sf',
-            exp: 10,
+            exp: '25',
             type: 'ms'
         },
     ]
