@@ -27,10 +27,6 @@
 		margin-right: 15px;
 	}
 
-	p {
-		font-size: 1.1rem;
-	}
-
 	@media only screen and (max-width: 750px) {
 
         .content {
@@ -39,10 +35,6 @@
 
 		.container {
 			flex-wrap: wrap;
-		}
-
-		p {
-			font-size: 1rem;
 		}
 	}
 </style>

@@ -354,10 +354,6 @@
 			<img src="logo-blueg.png" alt="" class="logo">
 		</a>
 
-		<!-- <li class:active={$page.path === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-		<li class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></li>
-		<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></li> -->
-
 		<div class="site-nav">
 			<a aria-current='{$page.path === '/' ? 'page' : undefined}' href='.' class="a-icon-home">
 				<i  class="material-icons md-36 md-light icon-home"></i>
@@ -374,10 +370,6 @@
 			<a aria-current='{$page.path === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact">
 				<i class="material-icons md-36 md-light icon-contact"></i>
 			</a>
-
-			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-				the blog data when we hover over the link or tap it on a touchscreen -->
-			<!-- <a rel=prefetch aria-current='{$page.path === "blog" ? "page" : undefined}' href='blog'>blog</a> -->
 		</div>
 
 		{#if  mobileNavVisible}
@@ -397,18 +389,14 @@
 			<a aria-current='{$page.path === "contact" ? "page" : undefined}' href='contact' class="a-icon-contact" on:click={toggleMobileNav}>
 				<i class="material-icons md-36 md-light icon-contact"></i>
 			</a>
-
-			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-				the blog data when we hover over the link or tap it on a touchscreen -->
-			<!-- <a rel=prefetch aria-current='{$page.path === "blog" ? "page" : undefined}' href='blog'>blog</a> -->
 		</div>
 		{/if}
 
 		<div class="resume">
-				<a href="https://www.notion.so/Brian-J-Casey-22e9e5e1522e48a0b09d4c9efa588c40" class="resume-details" target="_blank">
-					<i class="material-icons md-12 md-light">assignment_ind</i>
-					<span>Resume</span>
-				</a>
+			<a href="https://www.notion.so/Brian-J-Casey-22e9e5e1522e48a0b09d4c9efa588c40" class="resume-details" target="_blank">
+				<i class="material-icons md-12 md-light">assignment_ind</i>
+				<span>Resume</span>
+			</a>
 		</div>
 
 		<div class="social-icons">
@@ -417,7 +405,5 @@
 		<div class="menu-btn" on:click={toggleMobileNav}>
 			<i class="material-icons md-36 md-light">menu</i>
 		</div>
-
-
 	</nav>
 </div>

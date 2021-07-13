@@ -89,12 +89,11 @@ if (!firstMount) {
     <div class="details-wrapper"
         in:fly={{y:50, duration:500, delay: descDelay}}
         out:fly={{y:30, duration:200}}>
-        <div class="details-years">
+        <h3 class="details-years">
 			{title.years}
-		</div>
+		</h3>
         <span class="fake-border"></span>
             <div class="details-content">
-            	<!-- {@html title.desc} -->
 				<svelte:component this={title.desc}></svelte:component>
 				<SkillsGrid titleType={title.type} />
             </div>

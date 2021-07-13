@@ -260,11 +260,3 @@
         {/each}
     </div>
 </div>
-
-            <!-- <a href="/" class="skill-element">
-                <svg viewBox="0 0 100 100" fill="none">
-                    <text class="skill-element-exp" x="10" y="20" font-size="14" fill="rgb(137, 137, 137)">{skill.exp}</text>
-                    <text class="skill-element-symbol {skill.type}" x="50" y="60" width="100%" text-anchor="middle" font-size="35">{skill.abrv}</text>
-                    <text class="skill-element-name {skill.type}" x="50" y="80" font-size="14" text-anchor="middle">{skill.name}</text>
-                </svg>
-            </a> -->

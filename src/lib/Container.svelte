@@ -27,6 +27,5 @@
 {#if canRender}
 	<div class="container" >
 		<slot></slot>
-	<!-- in:fadeIn out:fadeOut -->
 	</div>
 {/if}

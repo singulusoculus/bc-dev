@@ -27,6 +27,7 @@
         cursor: pointer;
         position: relative;
         background-color: white;
+        line-height: 1.5;
     }
     
     .project.active-project:after {
@@ -72,13 +73,13 @@
 <div class="projects" >
     {#each projects as project, i}
         <span class="fake-border"></span>
-        <div 
+        <h2 
         class="project" 
         class:active-project={activeProject === project.project} 
         on:click={() => dispatch('clicked', project.project)}
         in:fly={{x:-100, duration: 300, delay: 1300 + i * 150}} 
         out:fly={{y:30, duration:200}}>
             {project.project}
-        </div>
+</h2>
     {/each}
 </div>

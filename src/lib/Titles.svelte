@@ -18,7 +18,7 @@
 		align-items: center;
         color: rgb(104, 104, 104);
         margin: 1rem 0;
-        
+        line-height: 1.5;
 	}
 
 	.title {
@@ -72,13 +72,13 @@
 <div class="titles" >
     {#each titles as title, i}
         <span class="fake-border"></span>
-        <div 
+        <h2 
         class="title" 
         class:active-title={activeTitle === title.title} 
         on:click={() => dispatch('clicked', title.title)}
         in:fly={{x:-100, duration: 300, delay: 1300 + i * 150}} 
         out:fly={{y:30, duration:200}}>
             {title.title}
-        </div>
+</h2>
     {/each}
 </div>

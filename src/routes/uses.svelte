@@ -31,7 +31,8 @@
 			<li>Computer: 2018 13" MacBook Pro</li>
 			<li>Phone: Apple iPhone 12</li>
 			<li>Headphones: Apple Airpods Pro</li>
-			<li>Notes App: Notion & Obsidian</li>
+			<li>Notes: Notion & Obsidian</li>
+			<li>IDE: Visual Studio Code</li>
 			<li>Keyboard: Keychron K1</li>
 			<li>Laptop Stand: Roost 2.0</li>
 			<li>Microphone: Audiotechnica ATR2100</li>

@@ -113,9 +113,9 @@
     <div class="project-wrapper"
         in:fly={{y:50, duration:500, delay: descDelay}}
         out:fly={{y:30, duration:200}}>
-        <div class="header">
+        <h3 class="header">
 			{project.header}
-		</div>
+		</h3>
         <span class="fake-border"></span>
             <div class="content">
 				<div class="meta">
@@ -130,7 +130,6 @@
 				</div>
 				<hr>
                 <div class="content-text">
-                    <!-- {@html project.content} -->
 					<svelte:component this={project.content}></svelte:component>
                 </div>
             </div>
