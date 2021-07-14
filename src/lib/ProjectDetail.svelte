@@ -120,7 +120,9 @@
             <div class="content">
 				<div class="meta">
 					<div class="meta-sub">
+						{#if project.link}
 						<div class="meta-link">Link: <a href="{project.link}" target="_blank">{project.niceLink}</a></div>
+						{/if}
 						<div class="built-with">
 							<p>Built With:</p>
 							<SkillsGrid skills={project.builtWith} />

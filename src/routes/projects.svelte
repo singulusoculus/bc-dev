@@ -9,6 +9,7 @@
 	import TopNine from '$lib/content/topnine.md'
 	import PubMeeple from '$lib/content/pubmeeple.md'
 	import BrianCasey from '$lib/content/briancasey.md'
+	import ApPaymentReview from '$lib/content/apreview.md'
 
 	const projects = [
 		{
@@ -34,9 +35,20 @@
 			imageDesc: 'Top Nine Generator'
 		},
 		{
+			project: 'AP Payment Review',
+			content: ApPaymentReview,
+			delay: 600,
+			header: 'Review and Approve Accounts Payable Invoices',
+			link: '',
+			niceLink: '',
+			builtWith: ['Svelte.js', 'SQL Server', 'Express.js', 'Windows IIS'],
+			imageSrc: 'APPaymentReview.png',
+			imageDesc: 'AP Payment Review'
+		},
+		{
 			project: 'Pub Meeple.com',
 			content: PubMeeple,
-			delay: 600,
+			delay: 800,
 			header: 'Home of Pub Meeple on the web',
 			link: 'https://www.pubmeeple.com',
 			niceLink: 'pubmeeple.com',
@@ -47,7 +59,7 @@
 		{
 			project: 'Brian Casey.dev',
 			content: BrianCasey,
-			delay: 800,
+			delay: 1000,
 			header: 'You are here',
 			link: 'https://www.briancasey.dev',
 			niceLink: 'briancasey.dev',

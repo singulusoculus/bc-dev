@@ -153,6 +153,18 @@
             exp: '25',
             type: 'ms'
         },
+        {
+            name: 'Express.js',
+            abrv: 'Ex',
+            exp: '26',
+            type: 'webdev'
+        },
+        {
+            name: 'Windows IIS',
+            abrv: 'Wi',
+            exp: '27',
+            type: 'ms'
+        },
     ]
 
     $: filteredSkills = filterSkills(allSkills)
