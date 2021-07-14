@@ -21,7 +21,8 @@
 			niceLink: 'rankingengine.pubmeeple.com',
 			builtWith: ['JavaScript', 'PHP', 'WordPress', 'MaterializeCSS', 'mySQL'],
 			imageSrc: 'RankingEngine.png',
-			imageDesc: 'Board Game Ranking Engine'
+			imageDesc: 'Board Game Ranking Engine',
+			github: 'https://github.com/singulusoculus/tre-app-wp'
 		},
 		{
 			project: 'Top Nine Generator',
@@ -32,7 +33,8 @@
 			niceLink: 'topnine.pubmeeple.com',
 			builtWith: ['Svelte.js', 'JavaScript', 'CSS'],
 			imageSrc: 'TopNine.png',
-			imageDesc: 'Top Nine Generator'
+			imageDesc: 'Top Nine Generator',
+			github: 'https://github.com/singulusoculus/svelte-bg-top-nine'
 		},
 		{
 			project: 'AP Payment Review',
@@ -41,9 +43,10 @@
 			header: 'Review and Approve Accounts Payable Invoices',
 			link: '',
 			niceLink: '',
-			builtWith: ['Svelte.js', 'SQL Server', 'Express.js', 'Windows IIS'],
+			builtWith: ['Svelte.js', 'SQL Server', 'Express.js', 'Microsoft IIS'],
 			imageSrc: 'APPaymentReview.png',
-			imageDesc: 'AP Payment Review'
+			imageDesc: 'AP Payment Review',
+			github: 'https://github.com/singulusoculus/ap-payment-review'
 		},
 		{
 			project: 'Pub Meeple.com',
@@ -54,7 +57,8 @@
 			niceLink: 'pubmeeple.com',
 			builtWith: ['WordPress'],
 			imageSrc: 'PubMeeple.png',
-			imageDesc: 'Pub Meeple'
+			imageDesc: 'Pub Meeple',
+			github: ''
 		},
 		{
 			project: 'Brian Casey.dev',
@@ -65,7 +69,8 @@
 			niceLink: 'briancasey.dev',
 			builtWith: ['SvelteKit', 'Svelte.js', 'JavaScript', 'CSS'],
 			imageSrc: 'BrianCaseydev.png',
-			imageDesc: 'BrianCasey.dev'
+			imageDesc: 'BrianCasey.dev',
+			github: 'https://github.com/singulusoculus/bc-dev'
 		}
 	]
 

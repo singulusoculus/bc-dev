@@ -160,8 +160,8 @@
             type: 'webdev'
         },
         {
-            name: 'Windows IIS',
-            abrv: 'Wi',
+            name: 'Microsoft IIS',
+            abrv: 'Mi',
             exp: '27',
             type: 'ms'
         },
@@ -196,7 +196,8 @@
 
 <style>
     .skills-grid-wrapper {
-        width: 90%;
+        max-width: 90%;
+        min-width: 25%;
     }
 
     .skills-grid {
@@ -230,8 +231,6 @@
         box-shadow: -10px 10px 11px 0 rgba(0,0,0,0.25);
         transform: scale(1.05);
         z-index: 2;
-
-
     }
 
     .skills-grid svg {

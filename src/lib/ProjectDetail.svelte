@@ -21,6 +21,7 @@
 <style>
 	.project-wrapper {
 		box-shadow: -10px 10px 11px 0 rgba(0,0,0,0.25);
+		max-width: 900px;
 	}
 
 	.header {
@@ -77,27 +78,20 @@
 		font-size: 1.2rem;
 	}
 
-	.meta {
+	.links {
 		display: flex;
 		justify-content: space-around;
-        /* flex-wrap: wrap; */
-		margin: 1rem 0;
-        font-size: 1.1rem;
+		font-size: 1.1rem;
 		color: rgba(127,127,190,1);
 	}
 
-	.meta-sub {
+	.built-with {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		flex: 0 0 40%;
 	}
 
     @media only screen and (max-width: 960px) {
-        .meta {
-            flex-direction: column;
-            justify-content: center;
-        }
 
         .meta-link {
             margin-bottom: 10px;
@@ -118,22 +112,24 @@
 		</h3>
         <span class="fake-border"></span>
             <div class="content">
-				<div class="meta">
-					<div class="meta-sub">
-						{#if project.link}
-						<div class="meta-link">Link: <a href="{project.link}" target="_blank">{project.niceLink}</a></div>
-						{/if}
-						<div class="built-with">
-							<p>Built With:</p>
-							<SkillsGrid skills={project.builtWith} />
-						</div>
-					</div>
-					<Lightbox imageSrc={project.imageSrc} imageDesc={project.imageDesc} />
+				<Lightbox imageSrc={project.imageSrc} imageDesc={project.imageDesc} />
+				<div class="links">
+					{#if project.link}
+						<div class="meta-link"><a href="{project.link}" target="_blank">View Site</a></div>
+					{/if}
+					{#if project.github}
+					<div class="meta-link"><a href="{project.github}" target="_blank">View Source</a></div>
+					{/if}
 				</div>
 				<hr>
                 <div class="content-text">
 					<svelte:component this={project.content}></svelte:component>
                 </div>
+				<hr>
+				<div class="built-with">
+					<h3>Built With:</h3>
+					<SkillsGrid skills={project.builtWith} />
+				</div>
             </div>
         <div class="footer-wrapper">
             <div class="footer-content">
