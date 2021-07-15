@@ -68,63 +68,51 @@
 		bottom: 15px;
 	}
 
-	/* home */
-	.icon-home:before {
-		content: "home";
-		opacity: 1;
-		transition: all .3s ease-out;
-	}
-
-	.icon-home:hover:before{
-		opacity: 0;
-	}
-
+	/* HOME */
 	.a-icon-home:hover:after {
 		content: "HOME";
 		opacity: 1;
 	}
 
-	.a-icon-home:hover > i:before {
-		opacity: 0;
-	}
-
-	/* about - account_circle */
-	.icon-about:before {
-		content: "account_circle";
+	.a-icon-home > :global(.icon) {
 		opacity: 1;
 		transition: all .3s ease-out;
 	}
 
-	.icon-about:hover:before{
+	.a-icon-home:hover > :global(.icon) {
 		opacity: 0;
 	}
+
+	/* ABOUT  */
 
 	.a-icon-about:hover:after {
 		content: "ABOUT";
 		opacity: 1;
 	}
 
-	.a-icon-about:hover > i:before {
-		opacity: 0;
-	}
-
-	/* projects - apps */
-	.icon-projects:before {
-		content: "apps";
+	.a-icon-about > :global(.icon) {
 		opacity: 1;
 		transition: all .3s ease-out;
 	}
 
-	.icon-projects:hover:before{
+	.a-icon-about:hover > :global(.icon) {
 		opacity: 0;
 	}
+
+	/* PROJECTS  */
+
 
 	.a-icon-projects:hover:after {
 		content: "PROJECTS";
 		opacity: 1;
 	}
 
-	.a-icon-projects:hover > i:before {
+	.a-icon-projects > :global(.icon) {
+		opacity: 1;
+		transition: all .3s ease-out;
+	}
+
+	.a-icon-projects:hover > :global(.icon) {
 		opacity: 0;
 	}
 
@@ -132,40 +120,23 @@
 		left: -8px;
 	}
 
-	/* uses - phonelink */
-	.icon-uses:before {
-		content: "phonelink";
-		opacity: 1;
-		transition: all .3s ease-out;
-	}
-
-	.icon-uses:hover:before{
-		opacity: 0;
-	}
+	/* USES */
 
 	.a-icon-uses:hover:after {
 		content: "USES";
 		opacity: 1;
 	}
 
-	.a-icon-uses:hover > i:before {
-		opacity: 0;
-	}
-
-	/* CONTACT - email */
-	/* .icon-contact:before {
-		content: "";
+	.a-icon-uses > :global(.icon) {
 		opacity: 1;
 		transition: all .3s ease-out;
 	}
 
-	.icon-contact:hover:before{
+	.a-icon-uses:hover > :global(.icon) {
 		opacity: 0;
 	}
 
-	.a-icon-contact:hover > i:before {
-		opacity: 0;
-	} */
+	/* CONTACT  */
 	
 	.a-icon-contact:hover:after {
 		content: "CONTACT";
@@ -183,7 +154,23 @@
 
 	a:first-child+a+a+a+a:after{
 		left: -7px;
-	 } 
+	} 
+
+	/* GITHUB  */
+	
+	.a-icon-github:hover:after {
+		content: "GITHUB";
+		opacity: 1;
+	}
+
+	.a-icon-github > :global(.icon) {
+		opacity: 1;
+		transition: all .3s ease-out;
+	}
+
+	.a-icon-github:hover > :global(.icon) {
+		opacity: 0;
+	}
 	
 
 	.menu-btn {
@@ -257,10 +244,6 @@
 		color: #8B8BCE;
 	}
 
-	/* [aria-current] > i {
-		color: #8B8BCE;
-	} */
-
 	a[aria-current] > :global(.icon) {
 		color: #8B8BCE;
 	}
@@ -284,7 +267,7 @@
 		}
 
 		.site-nav > a {
-			margin: 1.5rem;
+			margin: 1.2rem;
 		}
 
 		.logo {
@@ -340,7 +323,6 @@
 			width: 100%;
 			justify-content: center;
 			z-index: 10;
-			/* left: -550px; */
 		}
 
 		nav {
@@ -371,43 +353,45 @@
 		</a>
 
 		<div class="site-nav">
-			<a aria-current='{$page.path === '/' ? 'page' : undefined}' href='.' class="a-icon-home a-icon">
-				<i  class="material-icons md-36 md-light icon-home"></i>
+			<a aria-current='{$page.path === '/' ? 'page' : undefined}' href='.' class="a-icon-home">
+				<Icon name="home" size=36 color="#fff"/>
 			</a>
-			<a aria-current='{$page.path === "/about" ? "page" : undefined}' href='about' class="a-icon-about a-icon">
-				<i class="material-icons md-36 md-light icon-about"></i>
+			<a aria-current='{$page.path === "/about" ? "page" : undefined}' href='about' class="a-icon-about">
+				<Icon name="user" size=36 color="#fff"/>
 			</a>
-			<a aria-current='{$page.path === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects a-icon">
-				<i class="material-icons md-36 md-light icon-projects"></i>
+			<a aria-current='{$page.path === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects">
+				<Icon name="grid" size=36 color="#fff"/>
 			</a>
-			<a aria-current='{$page.path === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses a-icon">
-				<i class="material-icons md-36 md-light icon-uses"></i>
+			<a aria-current='{$page.path === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses">
+				<Icon name="smartphone" size=36 color="#fff"/>
 			</a>
-			<a aria-current='{$page.path === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact a-icon">
-				<!-- <i class="material-icons md-36 md-light icon-contact"></i> -->
-				<!-- <i class="icon-contact"> -->
+			<a aria-current='{$page.path === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact">
 					<Icon name="mail" size=36 color="#fff"/>
-				<!-- </i> -->
+			</a>
+			<a href='https://github.com/singulusoculus' class="a-icon-github">
+				<Icon name="github" size=36 color="#fff"/>
 			</a>
 		</div>
 
 		{#if  mobileNavVisible}
 		<div class="mobile-site-nav" transition:fly={{x: -550, duration: 300}}>
-			<a aria-current='{$page.path === undefined ? "page" : undefined}' href='.' class="a-icon-home" on:click={toggleMobileNav}>
-				<i class="material-icons md-36 md-light icon-home"></i>
+			<a aria-current='{$page.path === '/' ? "page" : undefined}' href='.' class="a-icon-home" on:click={toggleMobileNav}>
+				<Icon name="home" size=36 color="#fff"/>
 			</a>
-			<a aria-current='{$page.path === "about" ? "page" : undefined}' href='about' class="a-icon-about" on:click={toggleMobileNav}>
-				<i class="material-icons md-36 md-light icon-about"></i>
+			<a aria-current='{$page.path === "/about" ? "page" : undefined}' href='about' class="a-icon-about" on:click={toggleMobileNav}>
+				<Icon name="user" size=36 color="#fff"/>
 			</a>
-			<a aria-current='{$page.path === "projects" ? "page" : undefined}' href='projects' class="a-icon-projects" on:click={toggleMobileNav}>
-				<i class="material-icons md-36 md-light icon-projects"></i>
+			<a aria-current='{$page.path === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects" on:click={toggleMobileNav}>
+				<Icon name="grid" size=36 color="#fff"/>
 			</a>
-			<a aria-current='{$page.path === "uses" ? "page" : undefined}' href='uses' class="a-icon-uses" on:click={toggleMobileNav}>
-				<i class="material-icons md-36 md-light icon-uses"></i>
+			<a aria-current='{$page.path === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses" on:click={toggleMobileNav}>
+				<Icon name="smartphone" size=36 color="#fff"/>
 			</a>
-			<a aria-current='{$page.path === "contact" ? "page" : undefined}' href='contact' class="a-icon-contact" on:click={toggleMobileNav}>
-				<!-- <i class="material-icons md-36 md-light icon-contact"></i> -->
+			<a aria-current='{$page.path === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact" on:click={toggleMobileNav}>
 				<Icon name="mail" size=36 color="#fff"/>
+			</a>
+			<a href='https://github.com/singulusoculus' class="a-icon-github">
+				<Icon name="github" size=36 color="#fff"/>
 			</a>
 		</div>
 		{/if}
