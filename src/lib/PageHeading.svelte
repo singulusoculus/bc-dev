@@ -1,6 +1,7 @@
 <script>
 import { fly, fade } from 'svelte/transition'
 import { firstLoad } from '$lib/stores.js'
+import Icon from '$lib/Icon.svelte'
 
 export let heading
 
@@ -59,7 +60,7 @@ $: isFirstLoad ? duration = 500 : duration = 0
 		align-items: center;
 		text-decoration: none;
 		cursor: pointer;
-	 color: white;
+	 	color: white;
 	}
 
 	@media only screen and (max-width: 960px) {
@@ -88,7 +89,7 @@ $: isFirstLoad ? duration = 500 : duration = 0
 		</h1>
 		<div class="resume" in:fade="{{duration: duration}}">
 		<a href="https://www.notion.so/Brian-J-Casey-22e9e5e1522e48a0b09d4c9efa588c40" class="resume-details" target="_blank">
-			<i class="material-icons md-12 md-light">assignment_ind</i>
+			<Icon name="file-text" size=20 color="#fff"/>
 			<span>Resume</span>
 		</a>
 	</div>

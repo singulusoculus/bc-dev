@@ -72,6 +72,7 @@
 	.a-icon-home:hover:after {
 		content: "HOME";
 		opacity: 1;
+		top: 11px;
 	}
 
 	.a-icon-home > :global(.icon) {
@@ -88,6 +89,7 @@
 	.a-icon-about:hover:after {
 		content: "ABOUT";
 		opacity: 1;
+		top: 11px;
 	}
 
 	.a-icon-about > :global(.icon) {
@@ -105,6 +107,7 @@
 	.a-icon-projects:hover:after {
 		content: "PROJECTS";
 		opacity: 1;
+		top: 11px;
 	}
 
 	.a-icon-projects > :global(.icon) {
@@ -125,6 +128,7 @@
 	.a-icon-uses:hover:after {
 		content: "USES";
 		opacity: 1;
+		top: 11px;
 	}
 
 	.a-icon-uses > :global(.icon) {
@@ -141,6 +145,7 @@
 	.a-icon-contact:hover:after {
 		content: "CONTACT";
 		opacity: 1;
+		top: 11px;
 	}
 
 	.a-icon-contact > :global(.icon) {
@@ -161,6 +166,7 @@
 	.a-icon-github:hover:after {
 		content: "GITHUB";
 		opacity: 1;
+		top: 11px;
 	}
 
 	.a-icon-github > :global(.icon) {
@@ -171,6 +177,10 @@
 	.a-icon-github:hover > :global(.icon) {
 		opacity: 0;
 	}
+
+	a:first-child+a+a+a+a+a:after{
+		left: -6px;
+	} 
 	
 
 	.menu-btn {
@@ -248,6 +258,18 @@
 		color: #8B8BCE;
 	}
 
+	.resume {
+		display: none;
+	}
+
+	.resume-details {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		cursor: pointer;
+	 	color: white;
+	}
+
 
 	@media only screen and (max-width: 960px) {
 		.nav-wrapper {
@@ -295,18 +317,6 @@
 			top: 45px;
 			left: 0px;
 		}
-	}
-
-	.resume {
-		display: none;
-	}
-
-	.resume-details {
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		cursor: pointer;
-	 	color: white;
 	}
 
 	@media only screen and (max-width: 550px) {
@@ -398,8 +408,8 @@
 
 		<div class="resume">
 			<a href="https://www.notion.so/Brian-J-Casey-22e9e5e1522e48a0b09d4c9efa588c40" class="resume-details" target="_blank">
-				<i class="material-icons md-12 md-light">assignment_ind</i>
-				<span>Resume</span>
+				<Icon name="file-text" size=20 color="#fff"/>
+				<span>Resume </span>
 			</a>
 		</div>
 

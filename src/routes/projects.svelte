@@ -40,7 +40,7 @@
 			project: 'AP Payment Review',
 			content: ApPaymentReview,
 			delay: 600,
-			header: 'Review and Approve Accounts Payable Invoices',
+			header: 'Review and Approve AP Invoices',
 			link: '',
 			niceLink: '',
 			builtWith: ['Svelte.js', 'SQL Server', 'Express.js', 'Microsoft IIS'],

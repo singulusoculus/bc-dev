@@ -17,6 +17,7 @@
 		border-radius: 3px;
 		align-self: center;
 		flex-shrink: 0;
+		margin: 0 auto;
 	}
 
 	.container {
