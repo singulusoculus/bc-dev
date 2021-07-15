@@ -1,6 +1,8 @@
 <script>
 	import { fly } from 'svelte/transition'
 	import { page } from '$app/stores';
+	import Icon from '$lib/Icon.svelte'
+	import Icons from '$lib/Icons.svelte'
 
 	let mobileNavVisible = false
 
@@ -150,9 +152,9 @@
 		opacity: 0;
 	}
 
-	/* contact - email */
-	.icon-contact:before {
-		content: "email";
+	/* CONTACT - email */
+	/* .icon-contact:before {
+		content: "";
 		opacity: 1;
 		transition: all .3s ease-out;
 	}
@@ -161,18 +163,28 @@
 		opacity: 0;
 	}
 
+	.a-icon-contact:hover > i:before {
+		opacity: 0;
+	} */
+	
 	.a-icon-contact:hover:after {
 		content: "CONTACT";
 		opacity: 1;
 	}
 
-	.a-icon-contact:hover > i:before {
+	.a-icon-contact > :global(.icon) {
+		opacity: 1;
+		transition: all .3s ease-out;
+	}
+
+	.a-icon-contact:hover > :global(.icon) {
 		opacity: 0;
 	}
 
 	a:first-child+a+a+a+a:after{
 		left: -7px;
-	}
+	 } 
+	
 
 	.menu-btn {
         color: #fff;
@@ -245,7 +257,11 @@
 		color: #8B8BCE;
 	}
 
-	[aria-current] > i {
+	/* [aria-current] > i {
+		color: #8B8BCE;
+	} */
+
+	a[aria-current] > :global(.icon) {
 		color: #8B8BCE;
 	}
 
@@ -355,20 +371,23 @@
 		</a>
 
 		<div class="site-nav">
-			<a aria-current='{$page.path === '/' ? 'page' : undefined}' href='.' class="a-icon-home">
+			<a aria-current='{$page.path === '/' ? 'page' : undefined}' href='.' class="a-icon-home a-icon">
 				<i  class="material-icons md-36 md-light icon-home"></i>
 			</a>
-			<a aria-current='{$page.path === "/about" ? "page" : undefined}' href='about' class="a-icon-about">
+			<a aria-current='{$page.path === "/about" ? "page" : undefined}' href='about' class="a-icon-about a-icon">
 				<i class="material-icons md-36 md-light icon-about"></i>
 			</a>
-			<a aria-current='{$page.path === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects">
+			<a aria-current='{$page.path === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects a-icon">
 				<i class="material-icons md-36 md-light icon-projects"></i>
 			</a>
-			<a aria-current='{$page.path === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses">
+			<a aria-current='{$page.path === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses a-icon">
 				<i class="material-icons md-36 md-light icon-uses"></i>
 			</a>
-			<a aria-current='{$page.path === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact">
-				<i class="material-icons md-36 md-light icon-contact"></i>
+			<a aria-current='{$page.path === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact a-icon">
+				<!-- <i class="material-icons md-36 md-light icon-contact"></i> -->
+				<!-- <i class="icon-contact"> -->
+					<Icon name="mail" size=36 color="#fff"/>
+				<!-- </i> -->
 			</a>
 		</div>
 
@@ -387,7 +406,8 @@
 				<i class="material-icons md-36 md-light icon-uses"></i>
 			</a>
 			<a aria-current='{$page.path === "contact" ? "page" : undefined}' href='contact' class="a-icon-contact" on:click={toggleMobileNav}>
-				<i class="material-icons md-36 md-light icon-contact"></i>
+				<!-- <i class="material-icons md-36 md-light icon-contact"></i> -->
+				<Icon name="mail" size=36 color="#fff"/>
 			</a>
 		</div>
 		{/if}

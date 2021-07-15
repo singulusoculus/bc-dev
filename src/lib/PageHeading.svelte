@@ -64,9 +64,16 @@ $: isFirstLoad ? duration = 500 : duration = 0
 
 	@media only screen and (max-width: 960px) {
 		.resume {
+			right: 10px;
+		}
+	}
+
+	@media only screen and (max-width: 550px) {
+		.resume {
 			display: none;
 		}
 	}
+
 
 </style>
 
