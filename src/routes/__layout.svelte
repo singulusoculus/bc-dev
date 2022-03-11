@@ -2,7 +2,7 @@
 	import Nav from '$lib/Nav.svelte';
 	import Icons from '$lib/Icons.svelte';
 	import { firstLoad } from '$lib/stores.js';
-	import '$lib/global.css';
+	import '$lib/assets/styles/global.css';
 
 	setTimeout(() => {
 		firstLoad.set(false)
