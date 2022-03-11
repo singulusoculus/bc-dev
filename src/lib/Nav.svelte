@@ -363,19 +363,19 @@
 		</a>
 
 		<div class="site-nav">
-			<a aria-label="home" aria-current='{$page.path === '/' ? 'page' : undefined}' href='.' class="a-icon-home">
+			<a aria-label="home" aria-current='{$page.url.pathname === '/' ? 'page' : undefined}' href='.' class="a-icon-home">
 				<Icon name="home" size=36 color="#fff"/>
 			</a>
-			<a aria-label="about" aria-current='{$page.path === "/about" ? "page" : undefined}' href='about' class="a-icon-about">
+			<a aria-label="about" aria-current='{$page.url.pathname === "/about" ? "page" : undefined}' href='about' class="a-icon-about">
 				<Icon name="user" size=36 color="#fff"/>
 			</a>
-			<a aria-label="projects" aria-current='{$page.path === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects">
+			<a aria-label="projects" aria-current='{$page.url.pathname === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects">
 				<Icon name="grid" size=36 color="#fff"/>
 			</a>
-			<a aria-label="uses" aria-current='{$page.path === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses">
+			<a aria-label="uses" aria-current='{$page.url.pathname === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses">
 				<Icon name="smartphone" size=36 color="#fff"/>
 			</a>
-			<a aria-label="contact" aria-current='{$page.path === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact">
+			<a aria-label="contact" aria-current='{$page.url.pathname === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact">
 					<Icon name="mail" size=36 color="#fff"/>
 			</a>
 			<a aria-label="github" href='https://github.com/singulusoculus' class="a-icon-github">
@@ -385,19 +385,19 @@
 
 		{#if  mobileNavVisible}
 		<div class="mobile-site-nav" transition:fly={{x: -550, duration: 300}}>
-			<a aria-label="home" aria-current='{$page.path === '/' ? "page" : undefined}' href='.' class="a-icon-home" on:click={toggleMobileNav}>
+			<a aria-label="home" aria-current='{$page.url.pathname === '/' ? "page" : undefined}' href='.' class="a-icon-home" on:click={toggleMobileNav}>
 				<Icon name="home" size=36 color="#fff"/>
 			</a>
-			<a aria-label="about" aria-current='{$page.path === "/about" ? "page" : undefined}' href='about' class="a-icon-about" on:click={toggleMobileNav}>
+			<a aria-label="about" aria-current='{$page.url.pathname === "/about" ? "page" : undefined}' href='about' class="a-icon-about" on:click={toggleMobileNav}>
 				<Icon name="user" size=36 color="#fff"/>
 			</a>
-			<a aria-label="projects" aria-current='{$page.path === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects" on:click={toggleMobileNav}>
+			<a aria-label="projects" aria-current='{$page.url.pathname === "/projects" ? "page" : undefined}' href='projects' class="a-icon-projects" on:click={toggleMobileNav}>
 				<Icon name="grid" size=36 color="#fff"/>
 			</a>
-			<a aria-label="uses" aria-current='{$page.path === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses" on:click={toggleMobileNav}>
+			<a aria-label="uses" aria-current='{$page.url.pathname === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses" on:click={toggleMobileNav}>
 				<Icon name="smartphone" size=36 color="#fff"/>
 			</a>
-			<a aria-label="contact" aria-current='{$page.path === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact" on:click={toggleMobileNav}>
+			<a aria-label="contact" aria-current='{$page.url.pathname === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact" on:click={toggleMobileNav}>
 				<Icon name="mail" size=36 color="#fff"/>
 			</a>
 			<a aria-label="github" href='https://github.com/singulusoculus' class="a-icon-github">
