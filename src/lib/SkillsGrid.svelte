@@ -165,6 +165,30 @@
             exp: '27',
             type: 'ms'
         },
+        {
+            name: 'SCSS',
+            abrv: 'Sc',
+            exp: '28',
+            type: 'webdev'
+        },
+        {
+            name: 'Oracle',
+            abrv: 'Or',
+            exp: '29',
+            type: 'ms'
+        },
+        {
+            name: 'Cognos',
+            abrv: 'Cg',
+            exp: '30',
+            type: 'ms'
+        },
+        {
+            name: 'Netlify',
+            abrv: 'Nt',
+            exp: '31',
+            type: 'webdev'
+        },
     ]
 
     $: filteredSkills = filterSkills(allSkills)

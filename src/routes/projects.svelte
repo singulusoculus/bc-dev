@@ -11,35 +11,48 @@
 	import BrianCasey from '$lib/content/briancasey.md'
 	import ApPaymentReview from '$lib/content/apreview.md'
 
+
 	const projects = [
+		{
+			project: 'Pub Meeple.com',
+			content: PubMeeple,
+			delay: 200,
+			header: 'Home of Pub Meeple on the Web',
+			link: 'https://www.pubmeeple.com',
+			niceLink: 'pubmeeple.com',
+			builtWith: ['SvelteKit', 'Svelte.js', 'JavaScript', 'SCSS', 'PHP', "mySQL"],
+			imageSrc: 'new-pubmeeple.png',
+			imageDesc: 'Pub Meeple',
+			github: ''
+		},
 		{
 			project: 'Ranking Engine',
 			content: RankingEngine,
-			delay: 200,
+			delay: 400,
 			header: 'Rank your board games',
-			link: 'https://rankingengine.pubmeeple.com',
+			link: 'https://pubmeeple.com/ranking-engine',
 			niceLink: 'rankingengine.pubmeeple.com',
-			builtWith: ['JavaScript', 'PHP', 'WordPress', 'MaterializeCSS', 'mySQL'],
+			builtWith: ['SvelteKit', 'Svelte.js', 'JavaScript', 'SCSS', 'PHP', "mySQL"],
 			imageSrc: 'RankingEngine.png',
 			imageDesc: 'Board Game Ranking Engine',
-			github: 'https://github.com/singulusoculus/tre-app-wp'
+			github: ''
 		},
 		{
 			project: 'Top Nine Generator',
 			content: TopNine,
-			delay: 400,
+			delay: 600,
 			header: 'Create a top nine image grid',
-			link: 'https://topnine.pubmeeple.com',
+			link: 'https://pubmeeple.com/top-nine',
 			niceLink: 'topnine.pubmeeple.com',
-			builtWith: ['Svelte.js', 'JavaScript', 'CSS'],
+			builtWith: ['SvelteKit', 'Svelte.js', 'JavaScript', 'SCSS'],
 			imageSrc: 'TopNine.png',
 			imageDesc: 'Top Nine Generator',
-			github: 'https://github.com/singulusoculus/svelte-bg-top-nine'
+			github: ''
 		},
 		{
 			project: 'AP Payment Review',
 			content: ApPaymentReview,
-			delay: 600,
+			delay: 800,
 			header: 'Review and Approve AP Invoices',
 			link: '',
 			niceLink: '',
@@ -47,18 +60,6 @@
 			imageSrc: 'APPaymentReview.png',
 			imageDesc: 'AP Payment Review',
 			github: 'https://github.com/singulusoculus/ap-payment-review'
-		},
-		{
-			project: 'Pub Meeple.com',
-			content: PubMeeple,
-			delay: 800,
-			header: 'Home of Pub Meeple on the web',
-			link: 'https://www.pubmeeple.com',
-			niceLink: 'pubmeeple.com',
-			builtWith: ['WordPress'],
-			imageSrc: 'PubMeeple.png',
-			imageDesc: 'Pub Meeple',
-			github: ''
 		},
 		{
 			project: 'Brian Casey.dev',
@@ -74,7 +75,7 @@
 		}
 	]
 
-	let activeProject = 'Ranking Engine'
+	let activeProject = 'Pub Meeple.com'
 </script>
 
 <style>
