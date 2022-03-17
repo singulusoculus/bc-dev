@@ -5,12 +5,16 @@ export let content
 
 </script>
 
-<style>
+<style lang="scss">
     .content-wrapper {
         width: 90%;
 		position: relative;
         margin-top: 2rem;
 		flex-grow: 1;
+
+		@media only screen and (max-width: 768px) {
+			width: 99%;
+		}
     }
 
     .content-box {
@@ -75,6 +79,7 @@ export let content
 
         .content {
             padding: 1rem;
+
         }
 	}
 

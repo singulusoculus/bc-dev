@@ -12,11 +12,12 @@ setTimeout(() => {
 
 </script>
 
-<style>
+<style lang="scss">
 	.detail {
 		margin-top: 2rem;
 		max-width: 80%;
 		position: relative;
+
 	}
 </style>
 

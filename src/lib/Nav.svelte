@@ -204,7 +204,7 @@
 	}
 
 	.mobile-site-nav > a {
-		margin: 1rem;
+		margin: .7rem;
 		position: relative;
 	}
 

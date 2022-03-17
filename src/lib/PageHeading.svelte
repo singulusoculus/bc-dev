@@ -8,7 +8,7 @@ export let heading
 let isFirstLoad
 let duration
 
-const unsubcribe = firstLoad.subscribe(value => {
+const unsubscribe = firstLoad.subscribe(value => {
 	isFirstLoad = value
 })
 
