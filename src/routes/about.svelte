@@ -26,6 +26,7 @@
 
 	.content {
 		margin-right: 15px;
+		font-size: 1.3rem;
 	}
 
 	@media only screen and (max-width: 750px) {

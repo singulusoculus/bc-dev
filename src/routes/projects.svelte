@@ -33,7 +33,7 @@
 			link: 'https://pubmeeple.com/ranking-engine',
 			niceLink: 'rankingengine.pubmeeple.com',
 			builtWith: ['SvelteKit', 'Svelte.js', 'JavaScript', 'SCSS', 'PHP', "mySQL"],
-			imageSrc: 'RankingEngine.png',
+			imageSrc: 'ranking-engine-3.png',
 			imageDesc: 'Board Game Ranking Engine',
 			github: ''
 		},
@@ -45,7 +45,7 @@
 			link: 'https://pubmeeple.com/top-nine',
 			niceLink: 'topnine.pubmeeple.com',
 			builtWith: ['SvelteKit', 'Svelte.js', 'JavaScript', 'SCSS'],
-			imageSrc: 'TopNine.png',
+			imageSrc: 'top-nine-2.1.png',
 			imageDesc: 'Top Nine Generator',
 			github: ''
 		},
