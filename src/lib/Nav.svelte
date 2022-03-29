@@ -375,9 +375,9 @@
 			<a aria-label="uses" aria-current='{$page.url.pathname === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses">
 				<Icon name="smartphone" size=36 color="#fff"/>
 			</a>
-			<a aria-label="contact" aria-current='{$page.url.pathname === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact">
+			<!-- <a aria-label="contact" aria-current='{$page.url.pathname === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact">
 					<Icon name="mail" size=36 color="#fff"/>
-			</a>
+			</a> -->
 			<a aria-label="github" href='https://github.com/singulusoculus' class="a-icon-github">
 				<Icon name="github" size=36 color="#fff"/>
 			</a>
@@ -397,9 +397,9 @@
 			<a aria-label="uses" aria-current='{$page.url.pathname === "/uses" ? "page" : undefined}' href='uses' class="a-icon-uses" on:click={toggleMobileNav}>
 				<Icon name="smartphone" size=36 color="#fff"/>
 			</a>
-			<a aria-label="contact" aria-current='{$page.url.pathname === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact" on:click={toggleMobileNav}>
+			<!-- <a aria-label="contact" aria-current='{$page.url.pathname === "/contact" ? "page" : undefined}' href='contact' class="a-icon-contact" on:click={toggleMobileNav}>
 				<Icon name="mail" size=36 color="#fff"/>
-			</a>
+			</a> -->
 			<a aria-label="github" href='https://github.com/singulusoculus' class="a-icon-github">
 				<Icon name="github" size=36 color="#fff"/>
 			</a>
