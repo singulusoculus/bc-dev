@@ -1,23 +1,18 @@
 <script>
-	import Container from '$lib/Container.svelte'
-	import PageHeading from '$lib/PageHeading.svelte'
-	import PageFooter from '$lib/PageFooter.svelte'
-	import PageContent from '$lib/PageContent.svelte'
-	import SkillsGrid from '$lib/SkillsGrid.svelte'
+	import Container from '$lib/Container.svelte';
+	import PageHeading from '$lib/PageHeading.svelte';
+	import PageFooter from '$lib/PageFooter.svelte';
+	import PageContent from '$lib/PageContent.svelte';
+	import SkillsGrid from '$lib/SkillsGrid.svelte';
 
 	const gear = {
-		heading: 'Gear/Apps I like to use',
-	}
+		heading: 'Gear/Apps I like to use'
+	};
 
 	const skills = {
 		heading: 'Technical Skills'
-	}
-
+	};
 </script>
-
-<style>
-
-</style>
 
 <svelte:head>
 	<title>Brian Casey | Web Developer | Uses</title>
@@ -26,9 +21,9 @@
 <Container>
 	<PageHeading heading={'Uses'} />
 
-	<PageContent content={gear} >
+	<PageContent content={gear}>
 		<ul>
-			<li>Computer: 2018 13" MacBook Pro</li>
+			<li>Computer: 2021 14" MacBook Pro M1 Pro</li>
 			<li>Phone: Apple iPhone 12</li>
 			<li>Headphones: Apple Airpods Pro</li>
 			<li>Notes: Notion & Obsidian</li>
@@ -46,4 +41,5 @@
 	<PageFooter />
 </Container>
 
-
+<style>
+</style>
