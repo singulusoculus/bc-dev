@@ -46,7 +46,7 @@
 <Container>
 	<PageHeading heading={'Contact'} />
 
-	<PageContent {content}>
+	<PageContent {content} flyIn={false}>
 		{#if message}
 			<div class="message">{message}</div>
 		{/if}
