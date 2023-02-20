@@ -1,14 +1,8 @@
 <script>
-	import { fly } from 'svelte/transition';
-
 	export let content;
 </script>
 
-<div
-	class="content-wrapper"
-	in:fly={{ y: 50, duration: 500, delay: 1000 }}
-	out:fly={{ y: 30, duration: 200 }}
->
+<div class="content-wrapper">
 	{#if content.heading}
 		<div class="header-title">
 			{content.heading}

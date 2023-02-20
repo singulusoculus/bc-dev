@@ -2,7 +2,7 @@
 	import Container from '$lib/Container.svelte';
 	import PageHeading from '$lib/PageHeading.svelte';
 	import PageFooter from '$lib/PageFooter.svelte';
-	import PageContent from '$lib/PageContent.svelte';
+	import PageContentStatic from '$lib/PageContentStatic.svelte';
 
 	import TextField from '$lib/TextField.svelte';
 	import Button from '$lib/Button.svelte';
@@ -43,10 +43,11 @@
 	<title>Brian Casey | Web Developer | Contact</title>
 </svelte:head>
 
-<Container>
+<!-- <Container> -->
+<div class="container">
 	<PageHeading heading={'Contact'} />
 
-	<PageContent {content} flyIn={false}>
+	<PageContentStatic {content}>
 		{#if message}
 			<div class="message">{message}</div>
 		{/if}
@@ -56,7 +57,6 @@
 			method="post"
 			netlify
 			netlify-honeypot="bot-field"
-			data-netlify="true"
 			bind:this={form}
 			on:submit|preventDefault={handleSubmit}
 		>
@@ -69,11 +69,12 @@
 				<Button type="submit" text="Send" />
 			</div>
 		</form>
-	</PageContent>
+	</PageContentStatic>
 
 	<PageFooter />
-</Container>
+</div>
 
+<!-- </Container> -->
 <style lang="scss">
 	p {
 		font-size: 1.2rem;
@@ -93,5 +94,21 @@
 		font-style: italic;
 		text-align: center;
 		font-size: 1.3rem;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		/* height: 100vh; */
+		min-height: 100vh;
+	}
+
+	@media only screen and (max-width: 960px) {
+		.container {
+			min-height: calc(100vh - 65px);
+		}
 	}
 </style>
