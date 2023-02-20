@@ -51,7 +51,15 @@
 			<div class="message">{message}</div>
 		{/if}
 		<p>Do you have a project you want me to work on? Want to hire me? Send me a message.</p>
-		<form name="contact" method="post" netlify netlify-honeypot="bot-field">
+		<form
+			name="contact"
+			method="post"
+			netlify
+			netlify-honeypot="bot-field"
+			data-netlify="true"
+			bind:this={form}
+			on:submit|preventDefault={handleSubmit}
+		>
 			<input type="hidden" name="form-name" value="contact" />
 			<input type="hidden" name="bot-field" />
 			<TextField inputType="text" label="Name" bind:text={nameField} name="name" />
