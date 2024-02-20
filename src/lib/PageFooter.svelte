@@ -35,7 +35,7 @@ const year = new Date().getFullYear()
 	}
 </style>
 
-<span class="wrapper" out:fade="{{duration: 300}}" in:fade="{{duration: 300, delay: 1000}}">
+<span class="wrapper" out:fade|global="{{duration: 300}}" in:fade|global="{{duration: 300, delay: 1000}}">
 	<footer>
 		<p>Brian Casey | © {year}</p>
 	</footer>

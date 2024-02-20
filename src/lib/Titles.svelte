@@ -76,8 +76,8 @@
         class="title" 
         class:active-title={activeTitle === title.title} 
         on:click={() => dispatch('clicked', title.title)}
-        in:fly={{x:-100, duration: 300, delay: 1300 + i * 150}} 
-        out:fly={{y:30, duration:200}}>
+        in:fly|global={{x:-100, duration: 300, delay: 1300 + i * 150}} 
+        out:fly|global={{y:30, duration:200}}>
             {title.title}
 </h2>
     {/each}

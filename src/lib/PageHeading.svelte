@@ -79,15 +79,15 @@ $: isFirstLoad ? duration = 500 : duration = 0
 </style>
 
 <span class="wrapper">
-	<header in:fade="{{duration: duration}}">
-		<h1 class="me" out:fade="{{duration: 300}}">
+	<header in:fade|global="{{duration: duration}}">
+		<h1 class="me" out:fade|global="{{duration: 300}}">
 			{#each heading as char, i}
 				<span
-					in:fade="{{delay: 300 + i * 100, duration: 300}}"
+					in:fade|global="{{delay: 300 + i * 100, duration: 300}}"
 				>{char}</span>
 			{/each}
 		</h1>
-		<div class="resume" in:fade="{{duration: duration}}">
+		<div class="resume" in:fade|global="{{duration: duration}}">
 		<a href="https://www.notion.so/Brian-J-Casey-22e9e5e1522e48a0b09d4c9efa588c40" class="resume-details" target="_blank">
 			<Icon name="file-text" size=20 color="#fff"/>
 			<span>Resume</span>

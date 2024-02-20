@@ -87,8 +87,8 @@ if (!firstMount) {
 
 {#if canRender}
     <div class="details-wrapper"
-        in:fly={{y:50, duration:500, delay: descDelay}}
-        out:fly={{y:30, duration:200}}>
+        in:fly|global={{y:50, duration:500, delay: descDelay}}
+        out:fly|global={{y:30, duration:200}}>
         <h3 class="details-years">
 			{title.years}
 		</h3>

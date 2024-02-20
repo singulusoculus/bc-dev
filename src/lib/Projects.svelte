@@ -77,8 +77,8 @@
         class="project" 
         class:active-project={activeProject === project.project} 
         on:click={() => dispatch('clicked', project.project)}
-        in:fly={{x:-100, duration: 300, delay: 1300 + i * 150}} 
-        out:fly={{y:30, duration:200}}>
+        in:fly|global={{x:-100, duration: 300, delay: 1300 + i * 150}} 
+        out:fly|global={{y:30, duration:200}}>
             {project.project}
 </h2>
     {/each}

@@ -102,10 +102,10 @@
 </style>
 
 {#if isActive}
-    <div class="active-image-backdrop" on:click={toggleImage} transition:fade={{duration: 200}}>
+    <div class="active-image-backdrop" on:click={toggleImage} transition:fade|global={{duration: 200}}>
         <div class="active-image-wrapper">
-            <img src="{imageSrc}" alt="{imageDesc}" class="active-image" transition:fly={{y: 100, duration: 500, delay: 100}} on:click|stopPropagation="{!isActive ? toggleImage : null}">
-            <span aria-hidden="true" on:click|stopPropagation={toggleImage} in:fade={{delay: 400, duration: 200}}>
+            <img src="{imageSrc}" alt="{imageDesc}" class="active-image" transition:fly|global={{y: 100, duration: 500, delay: 100}} on:click|stopPropagation="{!isActive ? toggleImage : null}">
+            <span aria-hidden="true" on:click|stopPropagation={toggleImage} in:fade|global={{delay: 400, duration: 200}}>
                 <i class="material-icons">close</i>
             </span>
         </div>
@@ -113,7 +113,7 @@
 {/if}
 
 
-<div class="wrapper" transition:fade class:active="{isActive}">
+<div class="wrapper" transition:fade|global class:active="{isActive}">
     <div class="image" class:active="{isActive}" on:click|stopPropagation="{!isActive ? toggleImage : null}">
         <img src="{imageSrc}" alt="{imageDesc}">
     </div>

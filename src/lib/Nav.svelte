@@ -64,7 +64,7 @@
 		</div>
 
 		{#if mobileNavVisible}
-			<div class="mobile-site-nav" transition:fly={{ x: -550, duration: 300 }}>
+			<div class="mobile-site-nav" transition:fly|global={{ x: -550, duration: 300 }}>
 				<a
 					aria-label="home"
 					aria-current={$page.url.pathname === '/' ? 'page' : undefined}

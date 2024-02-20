@@ -6,8 +6,8 @@
 
 <div
 	class="content-wrapper"
-	in:fly={{ y: 50, duration: 500, delay: 1000 }}
-	out:fly={{ y: 30, duration: 200 }}
+	in:fly|global={{ y: 50, duration: 500, delay: 1000 }}
+	out:fly|global={{ y: 30, duration: 200 }}
 >
 	{#if content.heading}
 		<div class="header-title">
